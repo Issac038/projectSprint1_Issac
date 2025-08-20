@@ -1,0 +1,47 @@
+<!-- Prompt: Create a centered layout with a container for title, score, timer, game grid (3x3), and buttons -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whack-a-Mole</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Whack-a-Mole!</h1>
+    
+    <div class="score-timer">
+      <div class="score-box">Score: <span id="score">0</span></div>
+      <div class="timer-box">Time: <span id="time">30</span>s</div>
+    </div>
+
+    <div class="controls">
+      <button id="start-btn">Start Game</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <!-- Prompt: Create a 3x3 grid of buttons for holes -->
+    <div class="grid">
+      <!-- Prompt: Each div is a hole; JS will activate one randomly as the mole -->
+      <div class="hole" id="hole-0"></div>
+      <div class="hole" id="hole-1"></div>
+      <div class="hole" id="hole-2"></div>
+      <div class="hole" id="hole-3"></div>
+      <div class="hole" id="hole-4"></div>
+      <div class="hole" id="hole-5"></div>
+      <div class="hole" id="hole-6"></div>
+      <div class="hole" id="hole-7"></div>
+      <div class="hole" id="hole-8"></div>
+    </div>
+
+    <!-- Prompt: Game over message and play again button, initially hidden -->
+    <div class="game-over" id="game-over">
+      <p>Game Over!</p>
+      <p>Final Score: <span id="final-score">0</span></p>
+      <button id="play-again">Play Again</button>
+    </div>
+  </div>
+</body>
+</html>

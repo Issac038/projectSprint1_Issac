@@ -1,0 +1,113 @@
+/* Prompt: Style the body with gradient background and center the container */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #c1f0d4, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Prompt: Create card-like container for the game with padding and shadows */
+.game-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  color: #f87171;
+  text-shadow: 2px 2px #000;
+}
+
+/* Prompt: Display score and timer in colorful rounded boxes side by side */
+.score-timer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.score-box, .timer-box {
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  min-width: 90px;
+}
+
+/* Prompt: Style start and reset buttons with distinct colors */
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#start-btn {
+  background: #06b6d4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#reset-btn {
+  background: #ef4444;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Prompt: Style 3x3 grid for mole holes */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Prompt: Design the holes as black circles with drop shadow */
+.hole {
+  width: 80px;
+  height: 80px;
+  background: #2d2d2d;
+  border-radius: 50%;
+  box-shadow: inset -4px -4px 8px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+/* Prompt: Highlight the mole hole with a gradient */
+.mole {
+  background: radial-gradient(circle at 30% 30%, #fbbf24, #f97316);
+}
+
+/* Prompt: Style Game Over section and hide initially */
+.game-over {
+  display: none;
+  margin-top: 20px;
+}
+
+.game-over p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#play-again {
+  margin-top: 10px;
+  padding: 8px 18px;
+  font-weight: bold;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

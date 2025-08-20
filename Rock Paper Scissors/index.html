@@ -1,0 +1,61 @@
+<!-- Prompt: Create a complete HTML layout for a Rock Paper Scissors game with score display, buttons, round info, and visual feedback. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <!-- Prompt: Link external stylesheet and JS script -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Prompt: Create main game container centered on screen -->
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+
+    <!-- Prompt: Display player and computer score with labels and a VS circle -->
+    <div class="score-row">
+      <div class="score-box">
+        <p>You</p>
+        <span id="player-score">0</span>
+      </div>
+      <div class="vs-circle">vs</div>
+      <div class="score-box">
+        <p>Computer</p>
+        <span id="computer-score">0</span>
+      </div>
+    </div>
+
+    <!-- Prompt: Show current round progress -->
+    <div class="round-bar">
+      <p>Round <span id="round">1</span>/5</p>
+    </div>
+
+    <!-- Prompt: Add choice buttons with icons and labels -->
+    <div class="choices">
+      <button id="rock">🪨<br>Rock</button>
+      <button id="paper">📄<br>Paper</button>
+      <button id="scissors">✂️<br>Scissors</button>
+    </div>
+
+    <!-- Prompt: Display user and computer selection visually -->
+    <div class="selection-row">
+      <div class="choice-box">
+        <p>Your choice</p>
+        <div id="player-choice">?</div>
+      </div>
+      <div class="choice-box">
+        <p>Computer’s choice</p>
+        <div id="computer-choice">?</div>
+      </div>
+    </div>
+
+    <!-- Prompt: Display round result and game status -->
+    <div class="result" id="result">Make your choice!</div>
+
+    <!-- Prompt: Reset the game with this button -->
+    <button class="reset-button" id="reset">🔁 Reset Game</button>
+  </div>
+</body>
+</html>

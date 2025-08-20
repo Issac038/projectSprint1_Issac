@@ -1,0 +1,151 @@
+/* Prompt: Style the game with a dark mode theme and center it using Flexbox */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Prompt: Style the main game container with padding and shadow */
+.game-container {
+  background-color: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+/* Prompt: Style the score row with spacing and highlight circle */
+.score-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.score-box {
+  background: #334155;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100px;
+}
+
+.score-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.score-box span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.vs-circle {
+  background-color: #ef4444;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Prompt: Create round display bar */
+.round-bar {
+  background-color: #334155;
+  padding: 6px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* Prompt: Layout choice buttons in a row and add interaction effects */
+.choices {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.choices button {
+  padding: 12px;
+  font-size: 16px;
+  background: #475569;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 90px;
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+
+.choices button:hover {
+  background-color: #64748b;
+  transform: scale(1.05);
+}
+
+/* Prompt: Show selected choices in separate boxes */
+.selection-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.choice-box {
+  background-color: #334155;
+  border-radius: 12px;
+  width: 120px;
+  padding: 10px;
+}
+
+.choice-box p {
+  font-size: 14px;
+  color: #94a3b8;
+  margin: 0 0 5px;
+}
+
+.choice-box div {
+  font-size: 28px;
+}
+
+/* Prompt: Result feedback box */
+.result {
+  margin: 20px 0;
+  background: #334155;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Prompt: Style reset button with gradient and hover effect */
+.reset-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #f97316, #facc15);
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1e293b;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.reset-button:hover {
+  transform: scale(1.05);
+}
